@@ -1,0 +1,88 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color:#ffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    width:1100px;
+    height: 650px;
+}
+#signupimg{
+    display: flex;
+    background-color: black;
+    width: 600px;
+    height: 600px;
+    margin-top: 50px;
+    margin-right: 100px;
+    background-image:url(igor-costa-2Bjo1lzZlHc-unsplash.jpg);
+    background-size: cover;
+    background-position:center ;
+    z-index: 1000;
+    margin: 0;
+}
+#signuplogo img{
+    height: 48px;
+    width: 40px;   
+    background-size: cover;
+    background-position:center ;
+    z-index: 1000;
+    margin: 0;
+}
+h1{
+    color: #ffff;
+    margin-top: 70px;
+    padding-top: 400px;
+    padding-left: 113px;
+    font-family: sans-serif;
+}
+.signupform p{
+    color: black;
+    font-size: 10px;
+    margin-top: 0px;
+    padding-top: 13px;
+    margin-left: 5px;
+}
+#signuplogo{
+    margin-left: 30px;
+    margin-top: 35px;
+}
+.signupform{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* This ensures the form can grow based on content */
+    padding: 20px; /* Optional, to give some space inside the form */
+    box-sizing: border-box;
+}
+#createanacc{
+    margin-top:50px ;
+    padding-left: 80px;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.credintials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin-top: 0px;width: 100%; /* Adjust the width as needed */
+    margin-top: 20px; /* Adds space between the header and input */
+    padding: 10px; /* Optional, to create space inside the field */
+    border: 1px solid black; /* Make sure it's visible */
+    box-sizing: border-box; 
+}

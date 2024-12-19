@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+} */
+body{
+    background-color: white;
+    color: #333;
+}
+
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /*Adding box-sizing for easier padding/margin handling*/
+}
+/* For navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    position: fixed;
+    justify-content: space-between;
+}
+/* logo and image styling of navbar */
+#logo{
+    margin: 9px 13px;
+}
+#logo img{
+    height: 50px;
+    margin: 14px 34px;
+}
+/* Navigation list styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 16px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 31px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color 0.3s ease;
+
+}
+#navbar ul li a:hover{
+    color: #c0c0c0;
+}
+
+/* Hero Section */
+#home{
+    background-image:url(rico-reynaldi-elQTJpASwx8-unsplash.jpg) ;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+    z-index: 1000;
+    margin-top: 80px; 
+}
+.hero-sec{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 16px;
+    border-radius: 12px;
+    margin-right: 689px;
+    margin-top: 115px;
+    margin-left: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    /* text-align: center; */
+    
+}
+#home h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: sans-serif;
+}
+.HeroTexts{
+    font-size: 2.4rem;
+    padding: 18px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn{
+    padding: 18px 153px ;
+    border-radius: 6px;
+    background-color: #d81b60;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* About us section */
+#aboutus{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    height:100vh;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    background-color:#f9f9f9 ;
+}
+.about-text-wrapper {
+    display: flex; /* Arrange paragraphs side by side */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    width: 100%; /* Full width for the content */
+    max-width: 1200px; /* Control max width for layout */
+    padding: 20px;
+}
+.about-text-sec{
+    flex-direction: column;
+    flex: 1;
+    margin:0 20px;
+    padding: 11px;
+    
+    /* animation:  text-slide 1s linear 1s 1 alternate both; */
+}
+.AboutTexts{
+    
+    color:rgb(21, 20, 20);
+    font-size: 50px;
+    font-family: sans-serif;
+    padding: 15px;
+    text-align: center;
+    margin-top: 100px;
+}
+#aboutus p{
+    flex-direction: column;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin-right: 80px;
+    text-align: start;
+    text-wrap: wrap;
+    text-align: center;
+}
+/* .about-image{
+    
+    height: 60vh;
+    width: 600px;
+    background-color: #000;
+    background-image:url(igor-costa-2Bjo1lzZlHc-unsplash.jpg);
+    background-size: cover;
+    border-radius: 12px;
+    margin-right: 150px;
+    animation: slide 1s linear 1s 1 alternate both;
+} */
+/* @keyframes slide {
+    0%{
+        transform:translate(800px);
+    }
+    100%{
+        
+    }
+}
+@keyframes text-slide {
+    0%{
+        transform:translate(-800px);
+    }
+    100%{
+        
+    }
+} */
+
+@media (max-width:700px){
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar ul li a{
+        padding:10px 0;
+    }
+    .hero-sec{
+        padding: 10px;
+        text-align: center;
+        /* margin-left: 600px; */
+    }
+    #home h3{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .button-container{
+        flex-direction: column;
+        padding:12px 0px;
+        margin-top:10px;
+        /* margin-left: 150px; */
+        align-items: center;
+        
+    }
+    .btn{
+        padding:12px 30px;
+        margin-left: 9px;
+        font-size: 16px;
+        width: 70%;
+    }
+    @media (max-width: 1380px) {
+        .hero-sec{
+            margin: left 680px; ;
+        }
+        #home h3 {
+            font-size: 28px; /* Further reduce heading size */
+        }
+    
+        .btn {
+            padding: 10px 20px;
+            font-size: 14px; /* Smaller font size for buttons */
+            width: 90%; /* Buttons take up more width */
+        }
+    
+        .hero-sec {
+            padding: 15px;
+        }
+    }
+    #aboutus{
+        flex-direction: column;
+    }
+    .about-text-wrapper{
+        flex-direction: column;
+    }
+    .about-text-sec{
+        margin:10px 0;;
+    }
+}

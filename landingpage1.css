@@ -1,0 +1,175 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 30px;
+    margin: 4px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #c0c0c0;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('rico-reynaldi-elQTJpASwx8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #d81b60;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b00046;
+}
+
+/* Models Section */
+.models {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.models h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.car-models {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.model {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.model img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.model:hover img {
+    transform: scale(1.05);
+}
+
+.model h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media(max-width :700px){
+    .navbar{
+        
+        flex-direction: column;
+        
+    }
+}
+@media(max-width :700px){
+    .hero{
+        
+        flex-direction: column;
+        
+    }
+}
+@media(max-width :700px){
+    .model{
+        
+        flex-direction: column;
+        
+    }
+}
+@media(max-width :700px){
+    .hero-text{
+        
+        flex-direction: column;
+        
+    }
+}
